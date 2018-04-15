@@ -19,6 +19,12 @@ namespace Book.Books.BookInfos
         /// <summary>
         /// 书籍数量
         /// </summary>
-        public int BookNumberasd { get; set; }
+        public int BookNumber { get; set; }
+
+        public void test ()
+        {
+            //dsfgsdfsdfghfdsfg
+            //sdfgasdfg
+        }
     }
 }

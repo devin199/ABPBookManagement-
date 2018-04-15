@@ -189,6 +189,12 @@
     <Compile Include="Authorization\Roles\AppRoleConfig.cs" />
     <Compile Include="Authorization\Roles\StaticRoleNames.cs" />
     <Compile Include="Authorization\Users\UserRegistrationManager.cs" />
+    <Compile Include="BookDomainServiceBase.cs" />
+    <Compile Include="BookInfos\Authorization\BookInfoAppAuthorizationProvider.cs" />
+    <Compile Include="BookInfos\Authorization\BookInfoAppPermissions.cs" />
+    <Compile Include="BookInfos\DomainServices\BookInfoManager.cs" />
+    <Compile Include="BookInfos\DomainServices\IBookInfoManager.cs" />
+    <Compile Include="BookInfos\ltmReadME.cs" />
     <Compile Include="Books\BookInfos\BookInfo.cs" />
     <Compile Include="Configuration\AppSettingNames.cs" />
     <Compile Include="Configuration\AppSettingProvider.cs" />

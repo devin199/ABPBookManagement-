@@ -59,6 +59,15 @@
     <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Windsor.4.1.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.DynamicFilters, Version=3.0.1.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.DynamicFilters.3.0.1\lib\net40\EntityFramework.DynamicFilters.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="JetBrains.Annotations, Version=11.1.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBrains.Annotations.11.1.0\lib\net20\JetBrains.Annotations.dll</HintPath>
     </Reference>
@@ -194,11 +203,24 @@
     <Compile Include="Authorization\Accounts\Dto\RegisterOutput.cs" />
     <Compile Include="Authorization\Accounts\Dto\TenantAvailabilityState.cs" />
     <Compile Include="Authorization\Accounts\IAccountAppService.cs" />
+    <Compile Include="BookInfos\BookInfoAppServices.cs" />
+    <Compile Include="BookInfos\Dtos\BookInfoEditDto.cs" />
+    <Compile Include="BookInfos\Dtos\BookInfoListDto.cs" />
+    <Compile Include="BookInfos\Dtos\CreateOrUpdateBookInfoInput.cs" />
+    <Compile Include="BookInfos\Dtos\GetBookInfoForEditOutput.cs" />
+    <Compile Include="BookInfos\Dtos\GetBookInfosInput.cs" />
+    <Compile Include="BookInfos\Dtos\LTMAutoMapper\CustomerBookInfoMapper.cs" />
+    <Compile Include="BookInfos\IBookInfoAppServices.cs" />
     <Compile Include="Configuration\ConfigurationAppService.cs" />
     <Compile Include="Configuration\Dto\ChangeUiThemeInput.cs" />
     <Compile Include="Configuration\IConfigurationAppService.cs" />
     <Compile Include="Configuration\Ui\UiThemeInfo.cs" />
     <Compile Include="Configuration\Ui\UiThemes.cs" />
+    <Compile Include="Dto\FileDto.cs" />
+    <Compile Include="Dto\PagedAndFilteredInputDto.cs" />
+    <Compile Include="Dto\PagedAndSortedInputDto.cs" />
+    <Compile Include="Dto\PagedInputDto.cs" />
+    <Compile Include="Dto\PagedSortedAndFilteredInputDto.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\EditTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\TenantDto.cs" />

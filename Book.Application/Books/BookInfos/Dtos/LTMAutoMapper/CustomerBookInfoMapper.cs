@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-
+using Book.Books.BookInfos;
 namespace Book.BookInfos.Dtos.LTMAutoMapper
 {
-    using Book.Books.BookInfos;
+
 
     /// <summary>
     /// 配置BookInfo的AutoMapper

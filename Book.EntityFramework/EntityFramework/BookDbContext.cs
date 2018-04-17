@@ -1,7 +1,11 @@
 ﻿using System.Data.Common;
+using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using Book.Authorization.Roles;
 using Book.Authorization.Users;
+using Book.Books.BookInfos;
+using Book.Books.BorrowBooks;
+using Book.Books.Students;
 using Book.MultiTenancy;
 
 namespace Book.EntityFramework
@@ -15,6 +19,17 @@ namespace Book.EntityFramework
          *   But it may cause problems when working Migrate.exe of EF. If you will apply migrations on command line, do not
          *   pass connection string name to base classes. ABP works either way.
          */
+         public DbSet<BookInfo> BookInfos { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<BorrowBook> BorrowBooks { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Student>().ToTable("Student", "BK");
+            modelBuilder.Entity<BookInfo>().ToTable("BookInfo", "BK");
+            modelBuilder.Entity<BorrowBook>().ToTable("BorrowBook", "BK");
+            base.OnModelCreating(modelBuilder);
+        }
+
         public BookDbContext()
             : base("Default")
         {
@@ -43,5 +58,7 @@ namespace Book.EntityFramework
         {
 
         }
+
+   
     }
 }

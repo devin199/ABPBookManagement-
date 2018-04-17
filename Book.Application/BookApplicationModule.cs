@@ -7,9 +7,13 @@ using Abp.Domain.Repositories;
 using Abp.Modules;
 using Book.Authorization.Roles;
 using Book.Authorization.Users;
+using Book.Book.Students.Dtos.LTMAutoMapper;
 using Book.BookInfos.Authorization;
 using Book.BookInfos.Dtos.LTMAutoMapper;
+using Book.Books.BorrowBooks.Dtos.LTMAutoMapper;
+using Book.BorrowBooks.Authorization;
 using Book.Roles.Dto;
+using Book.Students.Authorization;
 using Book.Users.Dto;
 
 namespace Book
@@ -19,8 +23,12 @@ namespace Book
     {
         public override void PreInitialize()
         {
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomerStudentMapper.CreateMappings);
             Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomerBookInfoMapper.CreateMappings);
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomerBorrowBookMapper.CreateMappings);
             Configuration.Authorization.Providers.Add<BookInfoAppAuthorizationProvider>();
+            Configuration.Authorization.Providers.Add<StudentAppAuthorizationProvider>();
+            Configuration.Authorization.Providers.Add<BorrowBookAppAuthorizationProvider>();
         }
 
         public override void Initialize()

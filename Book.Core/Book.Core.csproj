@@ -196,6 +196,15 @@
     <Compile Include="BookInfos\DomainServices\IBookInfoManager.cs" />
     <Compile Include="BookInfos\ltmReadME.cs" />
     <Compile Include="Books\BookInfos\BookInfo.cs" />
+    <Compile Include="Books\BorrowBooks\BorrowBook.cs" />
+    <Compile Include="Books\BorrowBooks\BorrowBookStatus.cs" />
+    <Compile Include="Books\Students\Student.cs" />
+    <Compile Include="Books\Students\StudentSex.cs" />
+    <Compile Include="BorrowBooks\Authorization\BorrowBookAppAuthorizationProvider.cs" />
+    <Compile Include="BorrowBooks\Authorization\BorrowBookAppPermissions.cs" />
+    <Compile Include="BorrowBooks\DomainServices\BorrowBookManager.cs" />
+    <Compile Include="BorrowBooks\DomainServices\IBorrowBookManager.cs" />
+    <Compile Include="BorrowBooks\ltmReadME.cs" />
     <Compile Include="Configuration\AppSettingNames.cs" />
     <Compile Include="Configuration\AppSettingProvider.cs" />
     <Compile Include="Editions\EditionManager.cs" />
@@ -209,6 +218,11 @@
     <Compile Include="Authorization\Users\User.cs" />
     <Compile Include="Authorization\Users\UserManager.cs" />
     <Compile Include="Authorization\Users\UserStore.cs" />
+    <Compile Include="Students\Authorization\StudentAppAuthorizationProvider.cs" />
+    <Compile Include="Students\Authorization\StudentAppPermissions.cs" />
+    <Compile Include="Students\DomainServices\IStudentManager.cs" />
+    <Compile Include="Students\DomainServices\StudentManager.cs" />
+    <Compile Include="Students\ltmReadME.cs" />
     <Compile Include="Validation\ValidationHelper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,31 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\Book-zh-CN.xml" />
-    <EmbeddedResource Include="Localization\Source\Book-tr.xml" />
     <EmbeddedResource Include="Localization\Source\Book.xml" />
-    <EmbeddedResource Include="Localization\Source\Book-lt.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-pt-BR.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-es.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-fr.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-it.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-ja.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-nl-NL.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Book-vi.xml" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

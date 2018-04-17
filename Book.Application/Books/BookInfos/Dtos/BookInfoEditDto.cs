@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Book.BookInfos.Dtos.LTMAutoMapper;
 using Book.Books.BookInfos;
-
+using Abp.Application.Services.Dto;
 namespace Book.BookInfos.Dtos
 {
     public class BookInfoEditDto

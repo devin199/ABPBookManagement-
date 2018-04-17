@@ -55,5 +55,46 @@
     <text name="Yes" value="是" />
     <text name="No" value="否" />
     <text name="Optional" value="可选的" />
+
+    <!--BookInfo字段名-->
+    <text name="BookName" value="书名" />
+    <text name="Author" value="作者" />
+    <text name="BookNumber" value="书籍数量" />
+    
+     <!--BorrowBook字段名-->
+    <text name="BookInfoId" value="书名" />
+    <text name="StudentId" value="学员" />
+    <text name="BorrowBookStatus" value="状态" />
+    <text name="BorrowTime" value="借阅开始时间" />
+    <text name="ReturnTime" value="归还时间" />
+    
+      <!--Student字段名-->
+    <text name="StudentName" value="学生姓名" />
+    <text name="StudentNumber" value="学生证号码" />
+    <text name="StudentAge" value="年龄" />
+    <text name="StudentSex" value="性别" />
+    
+    <!--自定义权限-->
+    <text name="Pages" value="页面" />
+    <text name="Administration" value="管理员" />
+
+    <text name="BookInfo" value="书籍" />
+    <text name="CreateBookInfo" value="创建书籍" />
+    <text name="EditBookInfo" value="编辑书籍" />
+    <text name="DeleteBookInfo" value="删除书籍" />
+    <text name="BatchDeleteBookInfos" value="删除全部书籍" />
+
+    <text name="BorrowBook" value="借阅" />
+    <text name="CreateBorrowBook" value="创建借阅信息" />
+    <text name="EditBorrowBook" value="编辑借阅信息" />
+    <text name="DeleteBorrowBook" value="删除借阅信息" />
+    <text name="BatchDeleteBorrowBooks" value="删除全部借阅信息" />
+
+    <text name="Student" value="学生" />
+    <text name="CreateStudent" value="创建学生信息" />
+    <text name="EditStudent" value="编辑学生信息" />
+    <text name="DeleteStudent" value="删除学生信息" />
+    <text name="BatchDeleteStudents" value="删除全部学生信息" />
+
   </texts>
 </localizationDictionary>
